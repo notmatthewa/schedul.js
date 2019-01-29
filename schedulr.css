@@ -1,0 +1,48 @@
+.schedule-item{
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #78cb96;
+    margin-bottom: 2px;
+    padding: 3px;
+    user-select: none;
+}
+.schedule-item:hover{
+    filter: brightness(0.8);
+}
+.schedule-item-popup{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.schedule-item-popup-info{
+    min-width: 100px;
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: -50px;
+    left: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px lightgray;
+    padding: 3px;
+    color: white;
+}
+.popup-hidden{
+    animation-name: fade-out;
+    animation-duration: 0.1s; 
+    visibility: hidden;
+}
+.popup-shown{
+    visibility: visible;
+    animation-name: fade-in;
+    animation-duration: 0.1s;
+}
+@keyframes fade-in{
+    from {background-color: rgba(0, 0, 0, 0.0)}
+    to {background-color: rgba(0, 0, 0, 0.8)}
+}
+@keyframes fade-out{
+    from {background-color: rgba(0, 0, 0, 0.8);
+        visibility: visible;}
+    to {background-color: rgba(0, 0, 0, 0.0); 
+        visibility: hidden;}
+}

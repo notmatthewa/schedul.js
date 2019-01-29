@@ -1,0 +1,96 @@
+.schedule-container{
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+}
+.schedule-table{
+    width: 100%;
+}
+.schedule-table{
+    border: 1px solid black !important;
+    border-collapse: collapse;
+}
+.schedule-table td{
+    border: 1px solid black;
+    height: 100px;
+    max-height: 100px;
+    width: 100px;
+    max-width: 100px;
+    padding: 0px;
+    overflow-y: scroll;
+}
+.schedule-table td::-webkit-scrollbar{
+    width: 0px;
+}
+.schedule-table row{
+    max-height: 100px;
+}
+.schedule-cell{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.schedule-corner{
+    float: right;
+    font-size: 20px;
+}
+.empty {
+    color: lightgray;
+}
+.schedule-title{
+    font-size: 50px;
+    float: left;
+}
+.next-button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #4F5F7D;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 2px;
+    margin: 2px;
+    user-select: none;
+}
+.next-button:hover{
+    background-color: #3f4c64;
+    cursor: pointer;
+}
+.next-button:active{
+    box-shadow: 1px 1px 2px grey;
+}
+.next-button-container{
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+.schedule-header{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    display: block;
+    overflow: auto;
+}
+.display-month{
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+}
+.cell-header{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    top: 0px;
+}
+.schedule-area{
+    position: absolute;
+    top: calc(20% + 2px);
+}
+.schedule-table th{
+    background-color: #d94540;
+    color: white;
+}
